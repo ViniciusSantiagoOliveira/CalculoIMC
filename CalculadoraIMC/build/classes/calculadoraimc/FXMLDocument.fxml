@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="501.0" prefWidth="336.0" style="-fx-border-color: #000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadoraimc.FXMLDocumentController">
+    <children>
+        <Button fx:id="masculino" layoutX="27.0" layoutY="96.0" onAction="#clicouMasculino" prefHeight="25.0" prefWidth="84.0" text="Masculino" />
+        <Label fx:id="label" layoutX="88.0" layoutY="25.0" minHeight="16" minWidth="69" prefHeight="25.0" prefWidth="161.0" text="Calculadora do IMC" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="feminino" layoutX="125.0" layoutY="96.0" mnemonicParsing="false" onAction="#clicouFeminino" prefHeight="25.0" prefWidth="84.0" text="Feminino" />
+      <Label layoutX="27.0" layoutY="74.0" text="*Sexo:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="206.0" text="*Idade:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="337.0" text="Peso:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="268.0" text="Altura:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idade" layoutX="33.0" layoutY="229.0" prefHeight="25.0" prefWidth="182.0" />
+      <TextField fx:id="altura" layoutX="34.0" layoutY="296.0" prefHeight="25.0" prefWidth="182.0" />
+      <TextField fx:id="peso" layoutX="33.0" layoutY="361.0" prefHeight="25.0" prefWidth="182.0" />
+      <Button fx:id="sedentaria" layoutX="30.0" layoutY="160.0" mnemonicParsing="false" onAction="#clicouSedentaria" style="-fx-region-border: #000;" text="Sedentária" />
+      <Button fx:id="moderada" layoutX="117.0" layoutY="160.0" mnemonicParsing="false" onAction="#clicouModerada" text="Moderada" />
+      <Button fx:id="intensa" layoutX="204.0" layoutY="160.0" mnemonicParsing="false" onAction="#clicouIntensa" text="Intensa" />
+      <Label layoutX="30.0" layoutY="139.0" text="*Atividade Física">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="300.0" text="m" />
+      <Label layoutX="225.0" layoutY="365.0" text="kg" />
+      <Button fx:id="comparar" layoutX="225.0" layoutY="412.0" mnemonicParsing="false" onAction="#clicouComparar" text="Comparar" />
+      <Button fx:id="calcular" layoutX="31.0" layoutY="412.0" mnemonicParsing="false" onAction="#clicouCalcular" text="Calcular IMC" />
+      <Label layoutX="30.0" layoutY="458.0" text="*opcionais">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="233.0" text="anos" />
+      <Button fx:id="ver" layoutX="124.0" layoutY="412.0" mnemonicParsing="false" onAction="#clicouVer" text="Ver Resultado" />
+    </children>
+</AnchorPane>

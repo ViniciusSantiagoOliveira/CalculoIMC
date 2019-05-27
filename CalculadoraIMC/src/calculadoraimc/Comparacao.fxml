@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="425.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadoraimc.ComparacaoController">
+   <children>
+      <TableView fx:id="comparacao" layoutX="12.0" layoutY="36.0" prefHeight="351.0" prefWidth="589.0">
+        <columns>
+          <TableColumn fx:id="dataCol" prefWidth="143.0" resizable="false" text="Data" />
+          <TableColumn fx:id="imcCol" minWidth="7.0" prefWidth="71.0" resizable="false" text="IMC" />
+            <TableColumn fx:id="pesoCol" minWidth="0.0" prefWidth="73.0" resizable="false" text="Peso" />
+            <TableColumn fx:id="resCol" prefWidth="304.0" resizable="false" text="Situação" />
+        </columns>
+      </TableView>
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comparação">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="verprog" layoutX="501.0" layoutY="393.0" mnemonicParsing="false" onAction="#clicouVerprog" prefHeight="25.0" prefWidth="100.0" text="Ver Progresso" />
+   </children>
+</AnchorPane>
